@@ -1,11 +1,11 @@
-describe('Fix the Scope', function() {
+describe('Fix the Scope', function(done) {
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', function() {
       expect(window.customerName).to.equal('bob');
     });
   });
 
-  describe('upperCaseCustomerName()', function() {
+  describe('upperCaseCustomerName()', function(done) {
     it('modifies the customerName variable', function() {
       expect(window.customerName).to.equal('bob');
 
